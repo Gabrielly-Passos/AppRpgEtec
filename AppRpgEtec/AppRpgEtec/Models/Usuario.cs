@@ -8,5 +8,10 @@ namespace AppRpgEtec.Models
     {   
         public int Id { get; set; }
         public string Username { get; set; }
+        public string PasswordString { get; set; }
+        public string Perfil { get; set; }
+        public string Token { get; set; }
+        public byte[] Foto { get; set; }
+
     }
 }
