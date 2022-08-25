@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NFbaIWmqn7ZyvNfn7Lqw0MOayPJSjQXFVUBgynms3h7tT5WKZ+2eKywnuuNRX4jmAEnQKUmTg+r7OgNJJGz30Q==",
+  "dgSpecHash": "yl8Bbc4/8kB8ke/doPs2JETAmIjjsbBxuWNmKf2J2+I7VcxEwHOE9g4F41x/dUmCPB97r7zxdy9vYBIQirJa1Q==",
   "success": true,
   "projectFilePath": "D:\\3DS_2_Gabrielly_Passos\\PMobile\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etechas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\etechas\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"

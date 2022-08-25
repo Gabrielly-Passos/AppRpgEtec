@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XUrLlvHqlg7p5jmYWQyH16Ph7yCUY8Ztsy66OC71Z+Q/WcPc7eSgmoeximFTnzeqa42FGXNUUy+yahcn22yhww==",
+  "dgSpecHash": "DsKLGJGIbB17OhbfkauFiCDx4wsMlkg1zS5TvuDcEp0/yR5zol1fpk3y7Ro6D6yjhbo64dJ7ERB2GyOesE3eww==",
   "success": true,
   "projectFilePath": "D:\\3DS_2_Gabrielly_Passos\\PMobile\\AppRpgEtec\\AppRpgEtec\\AppRpgEtec.Android\\AppRpgEtec.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\etechas\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
