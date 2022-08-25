@@ -6,6 +6,7 @@ using AppRpgEtec.Services.Usuarios;
 using AppRpgEtec.Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 
 namespace AppRpgEtec.ViewModels.Usuarios
 {
