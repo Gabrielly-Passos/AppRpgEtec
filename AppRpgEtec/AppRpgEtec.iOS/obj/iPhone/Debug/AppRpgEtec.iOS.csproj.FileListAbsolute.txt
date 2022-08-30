@@ -61,3 +61,4 @@ D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhon
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhone\Debug\AppRpgEtec.iOS.csproj.CopyComplete
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhone\Debug\AppRpgEtec.iOS.exe
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhone\Debug\AppRpgEtec.iOS.pdb
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll

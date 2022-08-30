@@ -7,6 +7,8 @@ using AppRpgEtec.Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace AppRpgEtec.ViewModels.Usuarios
 {
@@ -17,6 +19,22 @@ namespace AppRpgEtec.ViewModels.Usuarios
 
         public ICommand EntrarCommand { get; set;  }
 
+    }
+
+    public async Task ConsultarUsuario()
+    {
+        try
+        {
+            //Próxima codificação
+
+            Usuario u
+
+        }
+        catch (Exception ex)
+        {
+            await Application.Current.MainPage
+                .DisplayAlert("Informação", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+        }
     }
 
 }
