@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppRpgEtec.Views;
+using AppRpgEtec.ViewModels.Usuarios;
 
 namespace AppRpgEtec
 {
@@ -10,7 +12,7 @@ namespace AppRpgEtec
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Views.Usuarios.LoginView());
         }
 
         protected override void OnStart()
