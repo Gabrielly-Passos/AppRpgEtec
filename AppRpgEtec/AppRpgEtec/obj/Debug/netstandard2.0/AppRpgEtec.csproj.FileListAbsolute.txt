@@ -14,3 +14,7 @@ D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\net
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppRpgEtec.pdb
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\ref\AppRpgEtec.dll
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\Views\Usuarios\LoginView.xaml.g.cs
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\bin\Debug\netstandard2.0\Mono.Android.dll
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\bin\Debug\netstandard2.0\Mono.Android.pdb
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\bin\Debug\netstandard2.0\Mono.Android.xml
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec\obj\Debug\netstandard2.0\AppRpgEtec.csproj.CopyComplete
