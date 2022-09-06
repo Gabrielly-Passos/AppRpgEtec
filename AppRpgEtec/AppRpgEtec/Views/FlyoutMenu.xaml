@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewRaiz="clr-namespace:AppRpgEtec"
+             x:Class="AppRpgEtec.Views.FlyoutMenu">
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Transparent">
+                <Image Aspect="AspectFill" HeightRequest="250" Source="etec_cps.gif" />
+                </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <ShellContent x:Name="Página Inicial" Title="Página Inicial" Icon="Home.png" ContentTemplate="DataTemplate viewRaiz:MainPage " />
+
+</Shell>
