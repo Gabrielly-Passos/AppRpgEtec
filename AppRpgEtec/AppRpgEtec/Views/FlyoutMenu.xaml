@@ -12,7 +12,7 @@
         <DataTemplate>
             <Grid BackgroundColor="Transparent">
                 <Image Aspect="AspectFill" HeightRequest="250" Source="etec_cps.gif" />
-                </Grid>
+            </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 

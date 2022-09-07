@@ -632,3 +632,10 @@ D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\D
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\info.png
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\menudisputas.png
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\menupersonagens.png
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\menuusuarios.png
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\etec_cps.gif
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\exit.png
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\home.png
