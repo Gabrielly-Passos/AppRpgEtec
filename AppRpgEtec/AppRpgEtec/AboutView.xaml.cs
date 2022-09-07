@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppRpgEtec.Views
+namespace AppRpgEtec
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FlyoutMenu : Shell
+    public partial class AboutView : ContentPage
     {
-        public FlyoutMenu()
+        public AboutView()
         {
             InitializeComponent();
-
-            if (Application.Current.Properties.ContainsKey("UsuarioUsername"))
-                lblLogin.Text = "Login: " + Application.Current.Properties["UsuarioUsername"].ToString();
         }
     }
 }
