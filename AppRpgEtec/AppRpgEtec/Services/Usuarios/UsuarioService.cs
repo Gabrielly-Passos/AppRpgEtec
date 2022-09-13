@@ -19,7 +19,7 @@ namespace AppRpgEtec.Services.Usuarios
 
         public async Task<Usuario> PostLoginUsuarioAsync(Usuario u)
         {
-            //Autenticar: Rota para método na API que verifica usuário e senha 
+            //Autenticar: Rota para método na API que verifica usuário e senha  // consomem a API
             string urlComplementar = "/Autenticar";
             u.Token = await _request.PostReturnStringAsync(ApiUrlBase + urlComplementar, u);
             return u;
