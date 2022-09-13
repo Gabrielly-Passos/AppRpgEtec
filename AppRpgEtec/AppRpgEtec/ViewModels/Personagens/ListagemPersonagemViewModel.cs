@@ -20,6 +20,7 @@ namespace AppRpgEtec.ViewModels.Personagens
             string token = Application.Current.Properties["UsuarioToken"].ToString();
             pService = new PersonagemService(token);
             Personagens = new ObservableCollection<Personagem>();
+            _ = ObterPersonagens;
         }
 
         public async Task ObterPersonagens() 
@@ -35,29 +36,8 @@ namespace AppRpgEtec.ViewModels.Personagens
                     .DisplayAlert("Ops", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
             }
 
-
-
-
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     }
 }
