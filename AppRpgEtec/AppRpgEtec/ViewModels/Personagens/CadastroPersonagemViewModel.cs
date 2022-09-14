@@ -8,17 +8,21 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Application = Xamarin.Forms.Application;
+using System.Windows.Input;
 
 namespace AppRpgEtec.ViewModels.Personagens
 {
     public class CadastroPersonagemViewModel : BaseViewModel
     {
-        private PersonagemService pService;
+        private PersonagemService pService; 
+        public ICommand SalvarCommand { get; set; }
 
         public CadastroPersonagemViewModel()
         {
             string token = Application.Current.Properties["UsuarioToken"].ToString();
             pService = new PersonagemService(token);
+            _ = ObterClasse();
+            SalvarCommand = new Command(async () => await SalvarPersonagem());
         }
 
         private int id;
@@ -44,7 +48,8 @@ namespace AppRpgEtec.ViewModels.Personagens
         {
             get => nome;
             set
-            { nome = value;
+            {
+                nome = value;
                 OnPropertyChanged();
             }
         }
@@ -113,9 +118,90 @@ namespace AppRpgEtec.ViewModels.Personagens
             }
         }
 
+        private ObservableCollection<TipoClasse> listaTiposClasse;
+
+        public ObservableCollection<TipoClasse> ListaTiposClasse
+        {
+            get { return listaTiposClasse; }
+            set
+            {
+                if (value != null)
+                {
+                    listaTiposClasse = value;
+                    OnPropertyChanged();
+                }
+            }
+
+        }
+        public async Task ObterClasse()
+        {
+            try
+            {
+                ListaTiposClasse = new ObservableCollection<TipoClasse>();
+                ListaTiposClasse.Add(new TipoClasse() { Id = 1, Descricao = "Cavaleiro" });
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        private TipoClasse tiposClassesSelecionada;
+
+        public TipoClasse TiposClassesSelecionada
+        {
+            get { return tiposClassesSelecionada; }
+            set
+            {
+                if (value != null)
+                {
+                    tiposClassesSelecionada = value;
+                    OnPropertyChanged();
+                }
+            }
+
+        }
+
+        public async Task SalvarPersonagem()
+        {
+            try
+            { 
+            Personagem model = new Personagem()
+            {
+                Nome = this.nome,
+                PontosVida = this.pontosVida,
+                Defesa = this.defesa,
+                Derrotas = this.derrotas,
+                Disputas = this.disputas,
+                Forca = this.forca,
+                Inteligencia = this.inteligencia,
+                Vitorias = this.vitorias,
+                Id = this.id,
+                Classe = (ClasseEnum)tiposClassesSelecionada.Id
+
+            };
+            if (model.Id == 0)
+                await pService.PostPersonagemAsync(model);
+
+            await Application.Current.MainPage
+                  .DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
+            await Shell.Current.GoToAsync("..");
+
+        }
+          catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                .DisplayAlert("Ops", ex.Message + "Detalhes " + ex.InnerException, "OK");
+            }
+          }
+
+  
 
 
 
 
-    }
+
+
+ }
 }
