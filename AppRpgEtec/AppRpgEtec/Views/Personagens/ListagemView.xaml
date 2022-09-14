@@ -19,6 +19,8 @@
         </StackLayout>
 
 
-
-    </ContentPage.Content>
+        <ContentPage.ToolbarItems>
+        <ToolbarItem Icon ="Add.png" Command="{Binding NovoPersonagem}" />
+            </ContentPage.ToolbarItems>
+        </ContentPage.Content>
 </ContentPage>
