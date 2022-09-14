@@ -18,9 +18,9 @@
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
 
-        <ShellContent x:Name="Página Inicial" Title="Página Inicial" Icon="Home.png" ContentTemplate="{DataTemplate viewRaiz:MainPage}" />
+        <ShellContent x:Name="PaginaInicial" Title="Página Inicial" Icon="Home.png" ContentTemplate="{DataTemplate viewRaiz:MainPage}" />
 
-        <ShellContent Title="Usuários" Icon="MenuUsuarios.png" ContentTemplate="{DataTemplate viewUsuarios:ListagemView} " />
+        <ShellContent Title="Usuarios" Icon="MenuUsuarios.png" ContentTemplate="{DataTemplate viewUsuarios:ListagemView} " />
 
         <ShellContent Title="Personagens" Icon="MenuPersonagens.png" ContentTemplate="{DataTemplate viewPersonagens:ListagemView}"/>
 

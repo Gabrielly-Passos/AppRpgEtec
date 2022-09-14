@@ -62,3 +62,6 @@ D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhon
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhone\Debug\AppRpgEtec.iOS.exe
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\obj\iPhone\Debug\AppRpgEtec.iOS.pdb
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\bin\iPhone\Debug\Mono.Android.dll
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\bin\iPhone\Debug\Mono.Android.pdb
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.iOS\bin\iPhone\Debug\Mono.Android.xml

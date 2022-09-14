@@ -17,7 +17,7 @@ namespace AppRpgEtec.Views {
     public partial class FlyoutMenu : global::Xamarin.Forms.Shell {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ShellContent Página Inicial;
+        private global::Xamarin.Forms.ShellContent PaginaInicial;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label lblLogin;
@@ -25,7 +25,7 @@ namespace AppRpgEtec.Views {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FlyoutMenu));
-            Página Inicial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ShellContent>(this, "Página Inicial");
+            PaginaInicial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ShellContent>(this, "PaginaInicial");
             lblLogin = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lblLogin");
         }
     }

@@ -48,6 +48,7 @@ namespace AppRpgEtec.Services.Personagens
             await _request.DeleteAsync(ApiUrlBase + urlComplementar, _token);
             return new Personagem() { Id = personagemId };
         }
+       
 
 
 
