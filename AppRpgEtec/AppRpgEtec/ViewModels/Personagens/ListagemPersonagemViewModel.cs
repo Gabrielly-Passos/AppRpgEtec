@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace AppRpgEtec.ViewModels.Personagens
@@ -21,8 +22,11 @@ namespace AppRpgEtec.ViewModels.Personagens
             pService = new PersonagemService(token);
             Personagens = new ObservableCollection<Personagem>();
             _ = ObterPersonagens();
+
+            NovoPersonagem = new Command(async () => { await ExibirCadastroPersonagem(); });
         }
 
+        public ICommand NovoPersonagem { get; }
         public async Task ObterPersonagens() 
         {
             try
