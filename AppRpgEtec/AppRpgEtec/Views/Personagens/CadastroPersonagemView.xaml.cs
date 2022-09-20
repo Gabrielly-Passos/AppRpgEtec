@@ -1,4 +1,5 @@
 ﻿using AppRpgEtec.Services.Personagens;
+using AppRpgEtec.ViewModels.Personagens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,15 +16,14 @@ namespace AppRpgEtec.Views.Personagens
     {    
         private PersonagemService pService { get; set; }
         public ICommand SalvarCommand { get; set; }
-
        public ICommand CancelarCommand { get; set; }
 
-        private CadastroPersonagemView cadViewModel; 
+        private CadastroPersonagemViewModel cadViewModel; 
         public CadastroPersonagemView()
         {
             InitializeComponent();
 
-            cadViewModel = new CadastroPersonagemView();
+            cadViewModel = new CadastroPersonagemViewModel();
             BindingContext = cadViewModel;
             Title = "Novo Personagem";
         }

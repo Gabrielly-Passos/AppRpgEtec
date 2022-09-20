@@ -17,12 +17,21 @@ namespace AppRpgEtec.ViewModels.Personagens
         private PersonagemService pService; 
         public ICommand SalvarCommand { get; set; }
 
+        public ICommand CancelarCommand { get; set; }
+
         public CadastroPersonagemViewModel()
         {
             string token = Application.Current.Properties["UsuarioToken"].ToString();
             pService = new PersonagemService(token);
-            _ = ObterClasse();
+            _ = ObterClasses();
             SalvarCommand = new Command(async () => await SalvarPersonagem());
+
+            CancelarCommand = new Command (async => CancelarCadastro());
+        }
+
+        private async void CancelarCadastro()
+        {
+            await Shell.Current.GoToAsync("..");
         }
 
         private int id;
@@ -133,12 +142,15 @@ namespace AppRpgEtec.ViewModels.Personagens
             }
 
         }
-        public async Task ObterClasse()
+        public async Task ObterClasses()
         {
             try
             {
                 ListaTiposClasse = new ObservableCollection<TipoClasse>();
                 ListaTiposClasse.Add(new TipoClasse() { Id = 1, Descricao = "Cavaleiro" });
+                ListaTiposClasse.Add(new TipoClasse() { Id = 2, Descricao = "Mago" });
+                ListaTiposClasse.Add(new TipoClasse() { Id = 3, Descricao = "Clerigo" });
+                OnPropertyChanged(nameof(ListaTiposClasse));
             }
             catch (Exception ex)
             {
@@ -147,16 +159,16 @@ namespace AppRpgEtec.ViewModels.Personagens
             }
         }
 
-        private TipoClasse tiposClassesSelecionada;
+        private TipoClasse tipoClasseSelecionada;
 
-        public TipoClasse TiposClassesSelecionada
+        public TipoClasse TipoClasseSelecionada
         {
-            get { return tiposClassesSelecionada; }
+            get { return tipoClasseSelecionada; }
             set
             {
                 if (value != null)
                 {
-                    tiposClassesSelecionada = value;
+                    tipoClasseSelecionada = value;
                     OnPropertyChanged();
                 }
             }
@@ -178,7 +190,7 @@ namespace AppRpgEtec.ViewModels.Personagens
                 Inteligencia = this.inteligencia,
                 Vitorias = this.vitorias,
                 Id = this.id,
-                Classe = (ClasseEnum)tiposClassesSelecionada.Id
+                Classe = (ClasseEnum)tipoClasseSelecionada.Id
 
             };
             if (model.Id == 0)
