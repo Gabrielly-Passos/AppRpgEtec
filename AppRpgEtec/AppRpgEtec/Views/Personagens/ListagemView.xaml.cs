@@ -1,4 +1,5 @@
-﻿using AppRpgEtec.ViewModels.Personagens;
+﻿using AppRpgEtec.Models;
+using AppRpgEtec.ViewModels.Personagens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,5 +29,20 @@ namespace AppRpgEtec.Views.Personagens
             base.OnAppearing();
             _ = viewModel.ObterPersonagens();
         }
+
+        private Personagem personagemSelecionado;
+
+        public Personagem PersonagemSelecionado 
+        {
+            get { return personagemSelecionado; }
+            set
+            { 
+                if(value !=null)
+                personagemSelecionado = value;
+                
+                Shell.Current
+                    .GoToAsync($"cadPersonagemView?pId ={personagemSelecionado.Id}" );
+            
+            }   }
     }
 }

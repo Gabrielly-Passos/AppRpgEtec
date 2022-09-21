@@ -640,3 +640,4 @@ D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\D
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\exit.png
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\home.png
 D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\add.png
+D:\3DS_2_Gabrielly_Passos\PMobile\AppRpgEtec\AppRpgEtec\AppRpgEtec.Android\obj\Debug\120\res\drawable\delete.png

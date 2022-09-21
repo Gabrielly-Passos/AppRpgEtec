@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace AppRpgEtec.Models
@@ -18,5 +19,9 @@ namespace AppRpgEtec.Models
         public int Vitorias { get; set; }
         public int Derrotas { get; set; }
 
+        public static implicit operator Personagem(ObservableCollection<Personagem> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
