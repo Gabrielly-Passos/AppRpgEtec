@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:personagens="clr-namespace:AppRpgEtec.ViewModels.Personagens" xmlns:views="clr-namespace:AppRpgEtec.Views" xmlns:viewmodels="clr-namespace:AppRpgEtec.ViewModels" xmlns:usuarios="clr-namespace:AppRpgEtec.ViewModels.Usuarios" x:DataType="personagens:ListagemPersonagemViewModel"
              x:Class="AppRpgEtec.Views.Personagens.ListagemView">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon ="Add.png" Command="{Binding NovoPersonagem}" />
@@ -8,13 +8,14 @@
 
     <ContentPage.Content>
         <StackLayout Padding="10, 0, 0, 0" VerticalOptions="FillAndExpand">
-            <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding Personagens}"  SelectedItem="{Binding PersonagemSelecionado}" >
+            <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding Personagens}" 
+                      SelectedItem="{Binding PersonagemSelecionado}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
                                 <MenuItem Text="Remover" IconImageSource="Delete.png" IsDestructive="True"
-                                          Command="{Binding Path=BindingContext.RemoverPersonagemCommand, Source=[x:reference listview]}"
+                                          Command="{Binding Path=BindingContext.RemoverPersonagemCommand, Source={x:Reference listview}}"
                                           CommandParameter="{Binding .}"></MenuItem>
                             </ViewCell.ContextActions>
                             <StackLayout Padding="10">

@@ -212,6 +212,7 @@ namespace AppRpgEtec.ViewModels.Personagens
             }
           }
 
+        private string personagemSelecionadoId;
         public string PersonagemSelecionadoId
         {
             set
@@ -224,10 +225,10 @@ namespace AppRpgEtec.ViewModels.Personagens
                 }
             }
         }
-        private string personagemSelecionadoId;
+      
 
         public async void CarregarPersonagem()
-    {
+        {
         try
         {
             Personagem p = await
@@ -250,7 +251,7 @@ namespace AppRpgEtec.ViewModels.Personagens
         catch (Exception ex)
         {
             await Application.Current.MainPage
-                .DisplayAlert( "Ops" ,ex.Message + "Detalhes: " + ex.InnerException, "OK");
+                .DisplayAlert( "Ops", ex.Message + "Detalhes: " + ex.InnerException, "OK");
         }
     }
        

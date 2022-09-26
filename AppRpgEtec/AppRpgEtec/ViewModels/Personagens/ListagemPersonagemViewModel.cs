@@ -30,6 +30,7 @@ namespace AppRpgEtec.ViewModels.Personagens
         public ICommand NovoPersonagem { get; }
 
         public ICommand RemoverPersonagemCommand { get; }
+
         public async Task ObterPersonagens() 
         {
             try
@@ -59,14 +60,15 @@ namespace AppRpgEtec.ViewModels.Personagens
         }
 
 
-        public async Task RemoverPersonagem(Personagem P)
+        public async Task RemoverPersonagem(Personagem p)
         {
             try
             {
                 if(await Application.Current.MainPage
-                    .DisplayAlert("Confirmação", $"Confirma a remoção de {P.Nome}?", "sim", "Nao"))
+                    .DisplayAlert("Confirmação", $"Confirma a remoção de {p.Nome}?", "sim", "Nao"))
                 {
-                    await pService.DeletePersonagemAsync(P.Id);
+                    await pService.DeletePersonagemAsync(p.Id);
+
                     await Application.Current.MainPage.DisplayAlert("Mensagem", "Personagem removido com sucesso", "Ok");
 
                     _ = ObterPersonagens();
@@ -76,7 +78,7 @@ namespace AppRpgEtec.ViewModels.Personagens
             catch (Exception ex)
             {
                 await Application.Current.MainPage
-                    .DisplayAlert("Ops", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
 
             }
 

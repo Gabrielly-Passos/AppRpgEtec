@@ -36,13 +36,17 @@ namespace AppRpgEtec.Views.Personagens
         {
             get { return personagemSelecionado; }
             set
-            { 
-                if(value !=null)
-                personagemSelecionado = value;
-                
-                Shell.Current
-                    .GoToAsync($"cadPersonagemView?pId ={personagemSelecionado.Id}" );
-            
-            }   }
+            {
+                if (value != null)
+
+                {
+                    personagemSelecionado = value;
+
+                    Shell.Current
+                        .GoToAsync($"cadPersonagemView?pId ={personagemSelecionado.Id}");
+
+                }
+            }
+        }   
     }
 }
